@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+    background: linear-gradient(
+        84deg,
+        #f5f5dc,
+        #f5f5dc,
+        #000000
+    );
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #333333;
+}
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    margin: 30px auto;
+}
+
+.slider {
+    display: flex;
+    gap: 30px;
+    width: max-content;
+    animation: slide 12s linear infinite;
+}
+
+.slider img {
+    height: 300px;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+p {
+    font-size: 18px;
+    max-width: 900px;
+    margin: 20px auto;
+    line-height: 1.6;
+    color: #333333;
+}
+
+a {
+    color: #FFD700;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
